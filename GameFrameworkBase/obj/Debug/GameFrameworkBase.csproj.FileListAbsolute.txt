@@ -1,0 +1,5 @@
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\GameFrameworkBase.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\GameFrameworkBase.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\GameFrameworkBase\obj\Debug\GameFrameworkBase.csprojResolveAssemblyReference.cache
+E:\workproject\DllSourceFile\ClientCodeBuild\GameFrameworkBase\obj\Debug\GameFrameworkBase.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\GameFrameworkBase\obj\Debug\GameFrameworkBase.pdb

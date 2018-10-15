@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22690D7B-FBB2-4C53-9B60-02EF2481CE9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CinemachineEditor</RootNamespace>
+    <AssemblyName>CinemachineEditor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DLLOutPut\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_EDITOR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\Editors\CinemachineBasicMultiChannelPerlinEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineBlenderSettingsEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineBlendListCameraEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineBrainEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineClearShotEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineColliderEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineComposerEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineConfinerEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineExternalCameraEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineFramingTransposerEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineFreeLookEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineGroupComposerEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineHardLockToTargetEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineHardLookAtEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineMixingCameraEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineOrbitalTransposerEditor.cs" />
+    <Compile Include="Base\Editors\CinemachinePathEditor.cs" />
+    <Compile Include="Base\Editors\CinemachinePOVEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineScreenComposerGuides.cs" />
+    <Compile Include="Base\Editors\CinemachineSmoothPathEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineStateDrivenCameraEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineTargetGroupEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineTrackedDollyEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineTransposerEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineVirtualCameraBaseEditor.cs" />
+    <Compile Include="Base\Editors\CinemachineVirtualCameraEditor.cs" />
+    <Compile Include="Base\Menus\CinemachineMenu.cs" />
+    <Compile Include="Base\PropertyDrawers\CinemachineBlendDefinitionPropertyDrawer.cs" />
+    <Compile Include="Base\PropertyDrawers\CinemachineTagFieldPropertyDrawer.cs" />
+    <Compile Include="Base\PropertyDrawers\GetSetDrawer.cs" />
+    <Compile Include="Base\PropertyDrawers\LensSettingsPropertyDrawer.cs" />
+    <Compile Include="Base\PropertyDrawers\MinDrawer.cs" />
+    <Compile Include="Base\Utility\BaseEditor.cs" />
+    <Compile Include="Base\Utility\EmbeddedAssetHelpers.cs" />
+    <Compile Include="Base\Utility\SaveDuringPlay.cs" />
+    <Compile Include="Base\Utility\ScriptableObjectUtility.cs" />
+    <Compile Include="Base\Utility\SerializedPropertyHelper.cs" />
+    <Compile Include="Base\Windows\AboutWindow.cs" />
+    <Compile Include="Base\Windows\CinemachineColliderPrefs.cs" />
+    <Compile Include="Base\Windows\CinemachineSettings.cs" />
+    <Compile Include="CReflectionHelpers.cs" />
+    <Compile Include="PostFX\CinemachinePostProcessingEditor.cs" />
+    <Compile Include="PostFX\PostFXAutoImport.cs" />
+    <Compile Include="Timeline\MYCinemachineShotEditor.cs" />
+    <Compile Include="Timeline\CinemachineShotEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CinemachineRuntime\Cinemachine.csproj">
+      <Project>{f7b5e107-6c43-4061-bd48-d6f988060138}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

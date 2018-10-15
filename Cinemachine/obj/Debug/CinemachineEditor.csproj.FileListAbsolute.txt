@@ -1,0 +1,10 @@
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\CinemachineEditor.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\CinemachineEditor.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\Cinemachine\obj\Debug\CinemachineEditor.csprojResolveAssemblyReference.cache
+E:\workproject\DllSourceFile\ClientCodeBuild\Cinemachine\obj\Debug\CinemachineEditor.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\Cinemachine\obj\Debug\CinemachineEditor.pdb
+G:\FanFanKeTang\DLLResouce\DLLOutPut\CinemachineEditor.dll
+G:\FanFanKeTang\DLLResouce\DLLOutPut\CinemachineEditor.pdb
+G:\FanFanKeTang\DLLResouce\Cinemachine\obj\Debug\CinemachineEditor.csprojResolveAssemblyReference.cache
+G:\FanFanKeTang\DLLResouce\Cinemachine\obj\Debug\CinemachineEditor.dll
+G:\FanFanKeTang\DLLResouce\Cinemachine\obj\Debug\CinemachineEditor.pdb

@@ -1,0 +1,10 @@
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\GameFrameworkEditor.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\GameFrameworkEditor.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\GameFrameworkEditor\obj\Debug\GameFrameworkEditor.csprojResolveAssemblyReference.cache
+E:\workproject\DllSourceFile\ClientCodeBuild\GameFrameworkEditor\obj\Debug\GameFrameworkEditor.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\GameFrameworkEditor\obj\Debug\GameFrameworkEditor.pdb
+G:\FanFanKeTang\DLLResouce\DLLOutPut\GameFrameworkEditor.dll
+G:\FanFanKeTang\DLLResouce\DLLOutPut\GameFrameworkEditor.pdb
+G:\FanFanKeTang\DLLResouce\GameFrameworkEditor\obj\Debug\GameFrameworkEditor.csprojResolveAssemblyReference.cache
+G:\FanFanKeTang\DLLResouce\GameFrameworkEditor\obj\Debug\GameFrameworkEditor.dll
+G:\FanFanKeTang\DLLResouce\GameFrameworkEditor\obj\Debug\GameFrameworkEditor.pdb

@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72D800EF-F802-411B-93A6-FD5D126B0D9C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameFrameworkBase</RootNamespace>
+    <AssemblyName>GameFrameworkBase</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DLLOutPut\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EditorTestsRunner, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.EditorTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIAutomation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameFramework\Core\Base\EventPool\BaseEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Base\EventPool\EventPool.cs" />
+    <Compile Include="GameFramework\Core\Base\EventPool\EventPool.Event.cs" />
+    <Compile Include="GameFramework\Core\Base\EventPool\EventPoolMode.cs" />
+    <Compile Include="GameFramework\Core\Base\GameFrameworkAction.cs" />
+    <Compile Include="GameFramework\Core\Base\GameFrameworkEntry.cs" />
+    <Compile Include="GameFramework\Core\Base\GameFrameworkEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Base\GameFrameworkException.cs" />
+    <Compile Include="GameFramework\Core\Base\GameFrameworkFunc.cs" />
+    <Compile Include="GameFramework\Core\Base\GameFrameworkModule.cs" />
+    <Compile Include="GameFramework\Core\Base\Log\Log.cs" />
+    <Compile Include="GameFramework\Core\Base\Log\LogCallback.cs" />
+    <Compile Include="GameFramework\Core\Base\Log\LogLevel.cs" />
+    <Compile Include="GameFramework\Core\Base\TaskPool\ITask.cs" />
+    <Compile Include="GameFramework\Core\Base\TaskPool\ITaskAgent.cs" />
+    <Compile Include="GameFramework\Core\Base\TaskPool\TaskPool.cs" />
+    <Compile Include="GameFramework\Core\Base\Variable\GenericVariable.cs" />
+    <Compile Include="GameFramework\Core\Base\Variable\Variable.cs" />
+    <Compile Include="GameFramework\Core\DataNode\DataNodeManager.cs" />
+    <Compile Include="GameFramework\Core\DataNode\DataNodeManager.DataNode.cs" />
+    <Compile Include="GameFramework\Core\DataNode\IDataNode.cs" />
+    <Compile Include="GameFramework\Core\DataNode\IDataNodeManager.cs" />
+    <Compile Include="GameFramework\Core\Debugger\DebuggerManager.cs" />
+    <Compile Include="GameFramework\Core\Debugger\DebuggerManager.DebuggerWindowGroup.cs" />
+    <Compile Include="GameFramework\Core\Debugger\IDebuggerManager.cs" />
+    <Compile Include="GameFramework\Core\Debugger\IDebuggerWindow.cs" />
+    <Compile Include="GameFramework\Core\Debugger\IDebuggerWindowGroup.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadAgentHelperCompleteEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadAgentHelperErrorEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadAgentHelperUpdateEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadFailureEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadManager.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadManager.DownloadAgent.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadManager.DownloadCounter.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadManager.DownloadCounter.DownloadCounterNode.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadManager.DownloadTask.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadManager.DownloadTaskStatus.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadStartEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadSuccessEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Download\DownloadUpdateEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Download\IDownloadAgentHelper.cs" />
+    <Compile Include="GameFramework\Core\Download\IDownloadManager.cs" />
+    <Compile Include="GameFramework\Core\Entity\EntityManager.cs" />
+    <Compile Include="GameFramework\Core\Entity\EntityManager.EntityGroup.cs" />
+    <Compile Include="GameFramework\Core\Entity\EntityManager.EntityInfo.cs" />
+    <Compile Include="GameFramework\Core\Entity\EntityManager.EntityInstanceObject.cs" />
+    <Compile Include="GameFramework\Core\Entity\EntityManager.EntityStatus.cs" />
+    <Compile Include="GameFramework\Core\Entity\EntityManager.RecycleNode.cs" />
+    <Compile Include="GameFramework\Core\Entity\EntityManager.ShowEntityInfo.cs" />
+    <Compile Include="GameFramework\Core\Entity\HideEntityCompleteEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Entity\IEntity.cs" />
+    <Compile Include="GameFramework\Core\Entity\IEntityGroup.cs" />
+    <Compile Include="GameFramework\Core\Entity\IEntityGroupHelper.cs" />
+    <Compile Include="GameFramework\Core\Entity\IEntityHelper.cs" />
+    <Compile Include="GameFramework\Core\Entity\IEntityManager.cs" />
+    <Compile Include="GameFramework\Core\Entity\ShowEntityDependencyAssetEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Entity\ShowEntityFailureEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Entity\ShowEntitySuccessEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Entity\ShowEntityUpdateEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Event\EventManager.cs" />
+    <Compile Include="GameFramework\Core\Event\GameEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Event\IEventManager.cs" />
+    <Compile Include="GameFramework\Core\Fsm\Fsm.cs" />
+    <Compile Include="GameFramework\Core\Fsm\FsmBase.cs" />
+    <Compile Include="GameFramework\Core\Fsm\FsmEventHandler.cs" />
+    <Compile Include="GameFramework\Core\Fsm\FsmManager.cs" />
+    <Compile Include="GameFramework\Core\Fsm\FsmState.cs" />
+    <Compile Include="GameFramework\Core\Fsm\IFsm.cs" />
+    <Compile Include="GameFramework\Core\Fsm\IFsmManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\CheckVersionListResult.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\DecryptResourceCallback.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ILoadResourceAgentHelper.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\IResourceHelper.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\IResourceManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadAssetCallbacks.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadAssetDependencyAssetCallback.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadAssetFailureCallback.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadAssetSuccessCallback.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadAssetUpdateCallback.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadBytesCallback.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadResourceAgentHelperErrorEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadResourceAgentHelperLoadCompleteEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadResourceAgentHelperParseBytesCompleteEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadResourceAgentHelperReadBytesCompleteEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadResourceAgentHelperReadFileCompleteEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadResourceAgentHelperUpdateEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadResourceProgress.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadResourceStatus.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadSceneCallbacks.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadSceneDependencyAssetCallback.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadSceneFailureCallback.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadSceneSuccessCallback.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\LoadSceneUpdateCallback.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceCheckCompleteEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceInitCompleteEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.AssetDependencyInfo.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.AssetInfo.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.LoadType.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ReadWriteResourceInfo.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.CheckStatus.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.LocalVersionInfo.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.RemoteVersionInfo.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceChecker.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceGroup.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceInfo.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceIniter.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceLoader.AssetObject.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceLoader.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceLoader.LoadAssetTask.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceLoader.LoadDependencyAssetTask.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceLoader.LoadResourceAgent.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceLoader.LoadResourceAgent.WaitingType.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceLoader.LoadResourceTaskBase.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceLoader.LoadSceneTask.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceLoader.ResourceObject.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceName.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceUpdater.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.ResourceUpdater.UpdateInfo.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceManager.VersionListProcessor.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceMode.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceUpdateAllCompleteEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceUpdateChangedEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceUpdateFailureEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceUpdateStartEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\ResourceUpdateSuccessEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\UnloadSceneCallbacks.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\UnloadSceneFailureCallback.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\UnloadSceneSuccessCallback.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\VersionListUpdateFailureEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Resource\VersionListUpdateSuccessEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Scene\ISceneManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Scene\LoadSceneDependencyAssetEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Scene\LoadSceneFailureEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Scene\LoadSceneSuccessEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Scene\LoadSceneUpdateEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Scene\SceneManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Scene\UnloadSceneFailureEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Scene\UnloadSceneSuccessEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Setting\ISettingHelper.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Setting\ISettingManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Setting\SettingManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\Constant.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\ISoundAgent.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\ISoundAgentHelper.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\ISoundGroup.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\ISoundGroupHelper.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\ISoundHelper.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\ISoundManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\PlaySoundDependencyAssetEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\PlaySoundErrorCode.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\PlaySoundFailureEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\PlaySoundParams.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\PlaySoundSuccessEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\PlaySoundUpdateEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\ResetSoundAgentEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\SoundManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\SoundManager.PlaySoundInfo.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\SoundManager.SoundAgent.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Sound\SoundManager.SoundGroup.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\CloseUIFormCompleteEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\IUIForm.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\IUIFormHelper.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\IUIGroup.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\IUIGroupHelper.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\IUIManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\OpenUIFormDependencyAssetEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\OpenUIFormFailureEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\OpenUIFormSuccessEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\OpenUIFormUpdateEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\UIManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\UIManager.OpenUIFormInfo.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\UIManager.RecycleNode.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\UIManager.UIFormInstanceObject.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\UIManager.UIGroup.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\UI\UIManager.UIGroup.UIFormInfo.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Assembly.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Converter.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Encryption.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Json.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Json.IJsonHelper.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Nullable.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Path.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Random.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Text.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Verifier.Crc32.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Verifier.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Zip.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\Utility\Zip.IZipHelper.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\WebRequest\IWebRequestAgentHelper.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\WebRequest\IWebRequestManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\WebRequest\WebRequestAgentHelperCompleteEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\WebRequest\WebRequestAgentHelperErrorEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\WebRequest\WebRequestFailureEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\WebRequest\WebRequestManager.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\WebRequest\WebRequestManager.WebRequestAgent.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\WebRequest\WebRequestManager.WebRequestTask.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\WebRequest\WebRequestManager.WebRequestTaskStatus.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\WebRequest\WebRequestStartEventArgs.cs" />
+    <Compile Include="GameFramework\Core\GameFramework\WebRequest\WebRequestSuccessEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Localization\ILocalizationHelper.cs" />
+    <Compile Include="GameFramework\Core\Localization\ILocalizationManager.cs" />
+    <Compile Include="GameFramework\Core\Localization\Language.cs" />
+    <Compile Include="GameFramework\Core\Localization\LoadDictionaryDependencyAssetEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Localization\LoadDictionaryFailureEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Localization\LoadDictionarySuccessEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Localization\LoadDictionaryUpdateEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Localization\LocalizationManager.cs" />
+    <Compile Include="GameFramework\Core\Network\INetworkChannel.cs" />
+    <Compile Include="GameFramework\Core\Network\INetworkHelper.cs" />
+    <Compile Include="GameFramework\Core\Network\INetworkManager.cs" />
+    <Compile Include="GameFramework\Core\Network\IPacketHandler.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkClosedEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkConnectedEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkCustomErrorEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkErrorCode.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkErrorEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkManager.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkManager.NetworkChannel.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkManager.NetworkChannel.HeartBeatState.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkManager.NetworkChannel.ReceiveState.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkManager.NetworkChannel.SocketUserData.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkMissHeartBeatEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkSendPacketEventArgs.cs" />
+    <Compile Include="GameFramework\Core\Network\NetworkType.cs" />
+    <Compile Include="GameFramework\Core\Network\Packet.cs" />
+    <Compile Include="GameFramework\Core\ObjectPool\IObjectPool.cs" />
+    <Compile Include="GameFramework\Core\ObjectPool\IObjectPoolManager.cs" />
+    <Compile Include="GameFramework\Core\ObjectPool\ObjectBase.cs" />
+    <Compile Include="GameFramework\Core\ObjectPool\ObjectInfo.cs" />
+    <Compile Include="GameFramework\Core\ObjectPool\ObjectPoolBase.cs" />
+    <Compile Include="GameFramework\Core\ObjectPool\ObjectPoolManager.cs" />
+    <Compile Include="GameFramework\Core\ObjectPool\ObjectPoolManager.Object.cs" />
+    <Compile Include="GameFramework\Core\ObjectPool\ObjectPoolManager.ObjectPool.cs" />
+    <Compile Include="GameFramework\Core\ObjectPool\ReleaseObjectFilterCallback.cs" />
+    <Compile Include="GameFramework\Core\Procedure\IProcedureManager.cs" />
+    <Compile Include="GameFramework\Core\Procedure\ProcedureBase.cs" />
+    <Compile Include="GameFramework\Core\Procedure\ProcedureManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LitJson\LitJson.csproj">
+      <Project>{c0d05d40-94a6-4dee-8e99-4b039ee00a6d}</Project>
+      <Name>LitJson</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

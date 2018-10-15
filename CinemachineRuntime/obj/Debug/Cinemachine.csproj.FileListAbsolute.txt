@@ -1,0 +1,8 @@
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\Cinemachine.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\Cinemachine.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\CinemachineRuntime\obj\Debug\Cinemachine.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\CinemachineRuntime\obj\Debug\Cinemachine.pdb
+G:\FanFanKeTang\DLLResouce\DLLOutPut\Cinemachine.dll
+G:\FanFanKeTang\DLLResouce\DLLOutPut\Cinemachine.pdb
+G:\FanFanKeTang\DLLResouce\CinemachineRuntime\obj\Debug\Cinemachine.dll
+G:\FanFanKeTang\DLLResouce\CinemachineRuntime\obj\Debug\Cinemachine.pdb
