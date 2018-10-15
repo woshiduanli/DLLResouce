@@ -1,0 +1,2 @@
+E:\workproject\DllSourceFile\ClientCodeBuild\TimelinePlotEditorClient\obj\Debug\Timeline.csprojResolveAssemblyReference.cache
+G:\FanFanKeTang\DLLResouce\TimelinePlotEditorClient\obj\Debug\Timeline.csprojResolveAssemblyReference.cache

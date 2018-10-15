@@ -1,0 +1,10 @@
+E:\workproject\DllSourceFile\ClientCodeBuild\TimelinePlotClient\obj\Debug\TimelinePlotClient.csprojResolveAssemblyReference.cache
+E:\workproject\DllSourceFile\ClientCodeBuild\TimelinePlotClient\obj\Debug\TimelinePlotClient.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\TimelinePlotClient\obj\Debug\TimelinePlotClient.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\TimelinePlotClient.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\TimelinePlotClient.pdb
+G:\FanFanKeTang\DLLResouce\DLLOutPut\TimelinePlotClient.dll
+G:\FanFanKeTang\DLLResouce\DLLOutPut\TimelinePlotClient.pdb
+G:\FanFanKeTang\DLLResouce\TimelinePlotClient\obj\Debug\TimelinePlotClient.csprojResolveAssemblyReference.cache
+G:\FanFanKeTang\DLLResouce\TimelinePlotClient\obj\Debug\TimelinePlotClient.dll
+G:\FanFanKeTang\DLLResouce\TimelinePlotClient\obj\Debug\TimelinePlotClient.pdb

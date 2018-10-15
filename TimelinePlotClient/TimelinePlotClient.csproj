@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDF3F855-BD5F-4424-B217-35182B79E5F7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TimelinePlotEditorCore</RootNamespace>
+    <AssemblyName>TimelinePlotClient</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DLLOutPut\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DOTween, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UGUITool, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLOutPut\UGUITool.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\DLLOutPut\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\DLLOutPut\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\DLLOutPut\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>..\DLLOutPut\UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\DLLOutPut\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\DLLOutPut\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action\RoleActionClip.cs" />
+    <Compile Include="Action\RoleActionTrack.cs" />
+    <Compile Include="ActivationTrack\ActivationControlClip.cs" />
+    <Compile Include="ActivationTrack\ActivationControlTrack.cs" />
+    <Compile Include="Animation\RoleAnimationClip.cs" />
+    <Compile Include="Animation\RoleAnimationTrack.cs" />
+    <Compile Include="BehaviourExecuterFactory.cs" />
+    <Compile Include="BrainOperate\BrainOperateClip.cs" />
+    <Compile Include="BrainOperate\BrainOperateTrack.cs" />
+    <Compile Include="CameraEffect\CameraEffectClip.cs" />
+    <Compile Include="CameraEffect\CameraEffectTrack.cs" />
+    <Compile Include="TextBubble\TextBubbleClip.cs" />
+    <Compile Include="TextBubble\TextBubbleTrack.cs" />
+    <Compile Include="PlotDialogue\PlotDialogueClip.cs" />
+    <Compile Include="PlotDialogue\PlotDialogueTrack.cs" />
+    <Compile Include="ScreenEffectClip\ScreenEffectClip.cs" />
+    <Compile Include="ScreenEffectClip\ScreenEffectTrack.cs" />
+    <Compile Include="Dialogue\DialogueClip.cs" />
+    <Compile Include="Dialogue\DialogueTrack.cs" />
+    <Compile Include="UI\ScreenEffectUI.cs" />
+    <Compile Include="AudioTrack\MYAudioClip.cs" />
+    <Compile Include="AudioTrack\MYAudioTrack.cs" />
+    <Compile Include="EffectTrack\EffectClip.cs" />
+    <Compile Include="EffectTrack\EffectTrack.cs" />
+    <Compile Include="EmptyTrack\EmptyClip.cs" />
+    <Compile Include="EmptyTrack\EmptyTrack.cs" />
+    <Compile Include="Move\RoleMoveClip.cs" />
+    <Compile Include="Move\RoleMoveTrack.cs" />
+    <Compile Include="ObjectScaleControl\ObjectScaleControlClip.cs" />
+    <Compile Include="ObjectScaleControl\ObjectScaleControlTrack.cs" />
+    <Compile Include="RemoveVMTargetOrFollow\VMOperateClip.cs" />
+    <Compile Include="RemoveVMTargetOrFollow\VMOperateTrack.cs" />
+    <Compile Include="RoleData.cs" />
+    <Compile Include="RoleEffect\RoleEffectClip.cs" />
+    <Compile Include="RoleEffect\RoleEffectTrack.cs" />
+    <Compile Include="Slow\SlowClip.cs" />
+    <Compile Include="Slow\SlowTrack.cs" />
+    <Compile Include="UI\TimelineUI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CinemachineRuntime\Cinemachine.csproj">
+      <Project>{f7b5e107-6c43-4061-bd48-d6f988060138}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

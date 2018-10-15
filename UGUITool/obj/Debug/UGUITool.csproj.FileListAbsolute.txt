@@ -1,0 +1,15 @@
+D:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\UGUITool.dll
+D:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\UGUITool.pdb
+D:\workproject\DllSourceFile\ClientCodeBuild\UGUITool\obj\Debug\UGUITool.csprojResolveAssemblyReference.cache
+D:\workproject\DllSourceFile\ClientCodeBuild\UGUITool\obj\Debug\UGUITool.dll
+D:\workproject\DllSourceFile\ClientCodeBuild\UGUITool\obj\Debug\UGUITool.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\UGUITool.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\UGUITool.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\UGUITool\obj\Debug\UGUITool.csprojResolveAssemblyReference.cache
+E:\workproject\DllSourceFile\ClientCodeBuild\UGUITool\obj\Debug\UGUITool.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\UGUITool\obj\Debug\UGUITool.pdb
+G:\FanFanKeTang\DLLResouce\DLLOutPut\UGUITool.dll
+G:\FanFanKeTang\DLLResouce\DLLOutPut\UGUITool.pdb
+G:\FanFanKeTang\DLLResouce\UGUITool\obj\Debug\UGUITool.csprojResolveAssemblyReference.cache
+G:\FanFanKeTang\DLLResouce\UGUITool\obj\Debug\UGUITool.dll
+G:\FanFanKeTang\DLLResouce\UGUITool\obj\Debug\UGUITool.pdb

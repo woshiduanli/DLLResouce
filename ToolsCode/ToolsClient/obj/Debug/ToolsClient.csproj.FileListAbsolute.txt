@@ -1,0 +1,12 @@
+D:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\Tools.dll
+D:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\Tools.pdb
+D:\workproject\DllSourceFile\ClientCodeBuild\ToolsCode\ToolsClient\obj\Debug\Tools.dll
+D:\workproject\DllSourceFile\ClientCodeBuild\ToolsCode\ToolsClient\obj\Debug\Tools.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\Tools.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\Tools.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\ToolsCode\ToolsClient\obj\Debug\Tools.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\ToolsCode\ToolsClient\obj\Debug\Tools.pdb
+G:\FanFanKeTang\DLLResouce\DLLOutPut\Tools.dll
+G:\FanFanKeTang\DLLResouce\DLLOutPut\Tools.pdb
+G:\FanFanKeTang\DLLResouce\ToolsCode\ToolsClient\obj\Debug\Tools.dll
+G:\FanFanKeTang\DLLResouce\ToolsCode\ToolsClient\obj\Debug\Tools.pdb
