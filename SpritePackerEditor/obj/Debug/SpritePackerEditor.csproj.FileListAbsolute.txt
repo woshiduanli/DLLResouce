@@ -1,0 +1,5 @@
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\SpritePackerEditor.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\SpritePackerEditor.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\SpritePackerEditor\obj\Debug\SpritePackerEditor.csprojResolveAssemblyReference.cache
+E:\workproject\DllSourceFile\ClientCodeBuild\SpritePackerEditor\obj\Debug\SpritePackerEditor.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\SpritePackerEditor\obj\Debug\SpritePackerEditor.pdb

@@ -1,0 +1,13 @@
+D:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\SpritePacker.dll
+D:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\SpritePacker.pdb
+D:\workproject\DllSourceFile\ClientCodeBuild\SpritePacker\obj\Debug\SpritePacker.csprojResolveAssemblyReference.cache
+D:\workproject\DllSourceFile\ClientCodeBuild\SpritePacker\obj\Debug\SpritePacker.dll
+D:\workproject\DllSourceFile\ClientCodeBuild\SpritePacker\obj\Debug\SpritePacker.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\SpritePacker.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\SpritePacker.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\SpritePacker\obj\Debug\SpritePacker.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\SpritePacker\obj\Debug\SpritePacker.pdb
+G:\FanFanKeTang\DLLResouce\DLLOutPut\SpritePacker.dll
+G:\FanFanKeTang\DLLResouce\DLLOutPut\SpritePacker.pdb
+G:\FanFanKeTang\DLLResouce\SpritePacker\obj\Debug\SpritePacker.dll
+G:\FanFanKeTang\DLLResouce\SpritePacker\obj\Debug\SpritePacker.pdb

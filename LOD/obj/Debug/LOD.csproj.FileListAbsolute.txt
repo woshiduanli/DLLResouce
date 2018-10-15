@@ -1,0 +1,5 @@
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\LOD.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\DLLOutPut\LOD.pdb
+E:\workproject\DllSourceFile\ClientCodeBuild\LOD\obj\Debug\LOD.csprojResolveAssemblyReference.cache
+E:\workproject\DllSourceFile\ClientCodeBuild\LOD\obj\Debug\LOD.dll
+E:\workproject\DllSourceFile\ClientCodeBuild\LOD\obj\Debug\LOD.pdb
