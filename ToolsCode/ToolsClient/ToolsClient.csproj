@@ -313,6 +313,7 @@
     <Compile Include="DistortImageEffect.cs" />
     <Compile Include="DuplicatorComponent.cs" />
     <Compile Include="EffectQuality.cs" />
+    <Compile Include="Empty4Raycast.cs" />
     <Compile Include="FaQiuControl.cs" />
     <Compile Include="FollowCurve.cs" />
     <Compile Include="ImageEffectBase.cs" />

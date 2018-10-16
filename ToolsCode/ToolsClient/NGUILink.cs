@@ -22,6 +22,7 @@ public class NGUILink : MonoBehaviour
         public GameObject Root;
         public int HashID;
     }
+    public List<string> ClientEvent = new List<string>(); 
     public GameObject Root;
     public bool Show = true;
     public int HashID;
